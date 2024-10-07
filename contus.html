@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav1{
+            position: relative;
+            height: 125px;
+            width: 100%;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+        }
+        .im{
+            height: auto;
+            width: 100px;
+        }
+        .im img{
+            position: relative;
+            left: 20px;
+            height: auto;
+            width: 100px;
+        }
+        .nav1 h1{
+            position: relative;
+            left: 20px;
+            color: white;
+        }
+        .nav2{
+            position: relative;
+            top: 3px;
+            background-color: grey;
+            height: 40px;
+            width: 100%;
+        }
+        .lo{
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-decoration: none;
+        }
+        .lo a{
+            height: 40px;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+        .lo a:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        .con{
+            position: relative;
+            top: 50px;
+        }
+        .con h1{
+            text-align: center;
+            font-family: cursive;
+        }
+        .con form input{
+            height: 13px;
+            font-size: 10px;
+        }
+        
+        footer{
+            position: relative;
+            top: 100px;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: grey;
+            color: white;
+        }
+        .usedl ul{
+            position: relative;
+            top: 10px;
+            list-style-type: none;
+            text-align: center;
+            font-size: small;
+        }
+        .soc{
+            position: relative;
+            bottom: 15px;
+        }
+        .soc ul{
+            position: relative;
+            top: 10px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .middle h5{
+            position: relative;
+            top: 13px;
+        }
+        .middle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            position: relative;
+            text-align: center;
+        }
+        .middle .mai input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 30px;
+            height: 30px;
+            width: 200px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .middle .mai button{
+            position: relative;
+            top: 50px;
+            border: 2px solid white;
+            border-radius: 20px;
+            font-size: 10px;
+            height: 30px;
+            width: 100px;
+            color: white;
+            background-color: grey;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+        <div class="nav1">
+            <a class="im" href="./index.html" id="img1"><img src="./monkey.png" alt="noimg"></a>
+            <h1 id="on">Contact Us</h1>
+        </div>
+        <div class="nav2">
+            <ul class="lo"">
+                <a href="./devilf.html">Devil Fruit</a>
+                <a href="./trans.html">Transformations</a>
+                <a href="./haki.html">Haki</a>
+                <a href="./contus.html">Contact Us</a>
+                <a href="https://www.google.com/">Help</a>
+            </ul>
+        </div>
+        <div class="con">
+            <h1>Contact us</h1> <br>
+            <form action="">
+                <label>First Name</label> <br> <br>
+                <input type="text" placeholder="Enter Your First Name" size="80"> <br> <br>
+                <label for="">Last Name</label> <br> <br>
+                <input type="text" placeholder="Enter Your Last Name" size="80"><br> <br>
+                <label>Gender</label>
+                <input type="radio" name="gen"><label>Male</label>
+                <input type="radio" name="gen"><label for="">Female</label>
+                <input type="radio" name="gen"><label for="">Other</label><br> <br>
+                <label for="">Enter email</label> <br> <br>
+                <input type="email" placeholder="Enter email" size="80"> <br> <br>
+                <label for="">Problem or Feedback</label> <br><br>
+                <input type="text" placeholder="Problem or Feedback" size="80"> <br><br>
+                <button>Submit</button>
+            </form>
+        </div>
+        <footer>
+            <div class="usedl">
+                <h5>USEFUL LINKS</h5>
+                <ul>
+                    <li>About</li>
+                    <li>More</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="middle">
+                <H5>NEWSLETTER</H5>
+                    <form class="mai">
+                        <input type="email" placeholder="Your Email Address">
+                        <button>SUBSCRIBE NOW</button>
+                    </form>
+            </div>
+            <div class="soc">
+                <h5>SOCIAL MEDIA</h5>
+                <ul>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-tiktok"></i></li>
+                    <li><i class="fa-brands fa-whatsapp"></i></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
